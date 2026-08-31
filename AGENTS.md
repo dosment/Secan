@@ -16,6 +16,7 @@ This project is being developed collaboratively with a learning-first approach.
 - Provide complete worked examples when the user is genuinely stuck or explicitly requests one, then encourage the user to explain, test, or modify the example.
 - Before making a substantial change, briefly describe what will change and why.
 - Ask for clarification when an assumption could significantly change the direction of the project.
+- Remind the user to follow proper Git procedures around meaningful changes: check status first, stage only intended files, review staged changes, use a descriptive commit message, and verify the working tree afterward.
 
 ## Code Changes
 
