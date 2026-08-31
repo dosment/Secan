@@ -1,7 +1,7 @@
 # agent.py manages the conversation history
 
-from model import get_model_response
-from prompts import SYSTEM_PROMPT
+from .model import get_model_response
+from .prompts import SYSTEM_PROMPT
 
 def run_agent():
     messages = [
