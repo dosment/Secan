@@ -10,22 +10,22 @@ def run_agent():
             "content": SYSTEM_PROMPT,
         }
     ]
-
-    user_input = input("You: ")
-    messages.append(
-        {
-            "role": "user",
-            "content": user_input,
-        }
-    )
-
-    model_response = get_model_response(messages)
-    messages.append(
-        {
-            "role": "assistant",
-            "content": model_response,
-        }
-    )
-
-    print(f"Assistant: {model_response}")
-    
+    while True:   # creates the conversational loop
+        user_input = input("You: ")
+        if user_input.lower() == "quit":
+            break
+        else:
+            messages.append(
+                {
+                    "role": "user",
+                    "content": user_input,
+                }
+            )
+            model_response = get_model_response(messages)
+            messages.append(
+                {
+                    "role": "assistant",
+                    "content": model_response,
+                }
+            )
+            print(f"Assistant: {model_response}")
