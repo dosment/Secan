@@ -11,9 +11,12 @@ def run_agent():
         }
     ]
     while True:   # creates the conversational loop
-        user_input = input("You: ")
+        user_input = input("You: ").strip()
         if user_input.lower() == "quit":
             break
+        elif not user_input:
+            print("Please enter a message.")
+            continue
         else:
             messages.append(
                 {

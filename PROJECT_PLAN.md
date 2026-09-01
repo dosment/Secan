@@ -11,6 +11,8 @@ Build a small, understandable AI agent harness in Python using OpenRouter. The p
 - [x] System prompt loaded from `prompts.py`.
 - [x] User and assistant messages stored as conversation history.
 - [x] Interactive conversation loop supports the `quit` command.
+- [x] Friendly error handling for API and connection failures.
+- [x] Blank user input is handled with a clear message.
 - [x] `main.py` uses a safe entry-point guard.
 - [x] Git repository initialized with regular checkpoints.
 
@@ -18,8 +20,6 @@ Build a small, understandable AI agent harness in Python using OpenRouter. The p
 
 ### 1. Stability and usability
 
-- [ ] Add friendly error handling for API and connection failures.
-- [ ] Handle blank user input clearly.
 - [ ] Choose and document a specific model, or make the model configurable.
 - [ ] Improve the quit command and user-facing prompts.
 - [ ] Add a `/new` command that resets the conversation while preserving the system prompt.
@@ -73,4 +73,4 @@ Build a small, understandable AI agent harness in Python using OpenRouter. The p
 
 ## Immediate next step
 
-Complete the first unchecked task under **Stability and usability**: add friendly error handling around the OpenRouter request so temporary network problems or API errors do not crash the program with a long traceback.
+Complete the next unchecked task under **Stability and usability**: choose a specific model and document it, or make the model configurable through an environment variable.
