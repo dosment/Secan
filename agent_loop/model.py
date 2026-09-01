@@ -17,7 +17,7 @@ def get_model_response(messages):
     # Send messages to the model and return its response.
     try:
         response = client.chat.completions.create(
-            model="openrouter/free",
+            model=os.getenv("OPENROUTER_MODEL", "openrouter/free"),
             messages=messages,
         )
         return response.choices[0].message.content
