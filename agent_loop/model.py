@@ -2,9 +2,10 @@
 
 import os
 from dotenv import load_dotenv
-from openai import OpenAI
+from openai import APIError, OpenAI
 
 load_dotenv()  # Load environment variables from .env file
+
 
 client = OpenAI(
     # Import API key and provider endpoint
@@ -14,8 +15,13 @@ client = OpenAI(
 
 def get_model_response(messages):
     # Send messages to the model and return its response.
-    response = client.chat.completions.create(
-        model="openrouter/free",
-        messages=messages,
-    )
-    return response.choices[0].message.content
+    try:
+        response = client.chat.completions.create(
+            model="openrouter/free",
+            messages=messages,
+        )
+        return response.choices[0].message.content
+
+    except APIError:
+        # Return None to show that the request failed.
+        return None

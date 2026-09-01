@@ -22,6 +22,11 @@ def run_agent():
                 }
             )
             model_response = get_model_response(messages)
+
+            if model_response is None:
+                print("Assistant: Sorry, I couldn't reach the model. Please try again.")
+                continue
+            
             messages.append(
                 {
                     "role": "assistant",
