@@ -39,7 +39,7 @@ def run_agent():
             model_response = get_model_response(messages)
 
             if model_response is None:
-                print("Assistant: Sorry, I couldn't reach the model. Please try again.")
+                print("System: Sorry, I couldn't reach the model. Please try again.")
                 continue
             
             messages.append(
@@ -48,4 +48,4 @@ def run_agent():
                     "content": model_response,
                 }
             )
-            print(f"Assistant: {model_response}")
+            print(f"\nSēcan: {model_response}\n\n")
