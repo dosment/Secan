@@ -37,8 +37,8 @@ Build Sēcan as a small, understandable AI agent harness in Python using a confi
 ### 3. Agent identity and prompts
 
 - [x] Add a `SOUL.md` file describing the agent’s personality, values, tone, and boundaries.
-- [ ] Decide how `SOUL.md` should work with the system prompt.
-- [ ] Load `SOUL.md` and combine it with the core system prompt.
+- [x] Decide how `SOUL.md` should work with the system prompt.
+- [x] Load `SOUL.md` and combine it with the core system prompt.
 
 ### 4. Testing
 
