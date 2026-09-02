@@ -18,6 +18,8 @@ This project is being developed collaboratively with a learning-first approach.
 - Ask for clarification when an assumption could significantly change the direction of the project.
 - Remind the user to follow proper Git procedures around meaningful changes: check status first, stage only intended files, review staged changes, use a descriptive commit message, and verify the working tree afterward.
 - Keep `ARCHITECTURE.md` and `PROJECT_PLAN.md` up to date when the project structure, implemented capabilities, or planned work changes.
+- The user makes all source-code changes. The assistant may explain, suggest, and review code, but must not edit source files.
+- The user executes all Git commands that change repository state, including staging, committing, branching, merging, restoring, and resetting. The assistant may run read-only Git commands and guide the user through one command at a time.
 
 ## Code Changes
 

@@ -10,10 +10,20 @@ def run_agent():
             "content": SYSTEM_PROMPT,
         }
     ]
+    print("Type quit, exit, /quit, or /exit to leave.")
     while True:   # creates the conversational loop
         user_input = input("You: ").strip()
-        if user_input.lower() == "quit":
+        if user_input.lower() in ("quit", "exit", "/exit", "/quit"):
+            print("Goodbye!")
             break
+        elif user_input.lower() == "/new":
+            messages = [
+                {
+                    "role": "system",
+                    "content": SYSTEM_PROMPT,
+                }
+            ]
+            print("Started a new conversation.")
         elif not user_input:
             print("Please enter a message.")
             continue
