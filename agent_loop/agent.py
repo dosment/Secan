@@ -2,6 +2,7 @@
 
 from .model import get_model_response
 from .prompts import SYSTEM_PROMPT
+from .commands import parse_command
 
 def run_agent():
     messages = [
@@ -10,13 +11,14 @@ def run_agent():
             "content": SYSTEM_PROMPT,
         }
     ]
-    print("Type quit, exit, /quit, or /exit to leave.")
+    print("Type /quit or /exit to leave.")
     while True:   # creates the conversational loop
         user_input = input("You: ").strip()
-        if user_input.lower() in ("quit", "exit", "/exit", "/quit"):
+        command = parse_command(user_input)
+        if command == "exit":
             print("Goodbye!")
             break
-        elif user_input.lower() == "/new":
+        elif command == "new":
             messages = [
                 {
                     "role": "system",

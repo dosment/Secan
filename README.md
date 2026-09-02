@@ -44,4 +44,4 @@ python -m agent_loop.main
 ## Commands
 
 - `/new` starts a new conversation while preserving the system prompt.
-- `quit`, `exit`, `/quit`, or `/exit` closes the agent.
+- `/quit` or `/exit` closes the agent.

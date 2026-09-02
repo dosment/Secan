@@ -10,7 +10,7 @@ Build Sēcan as a small, understandable AI agent harness in Python using a confi
 - [x] Provider connection configured through the `PROVIDER_API_KEY` and `PROVIDER_ENDPOINT` environment variables.
 - [x] System prompt loaded from `prompts.py`.
 - [x] User and assistant messages stored as conversation history.
-- [x] Interactive conversation loop supports the `quit` command.
+- [x] Interactive conversation loop supports slash commands for exiting and starting a new conversation.
 - [x] Friendly error handling for API and connection failures.
 - [x] Blank user input is handled with a clear message.
 - [x] Model can be configured through the `PROVIDER_MODEL` environment variable.
@@ -26,6 +26,7 @@ Build Sēcan as a small, understandable AI agent harness in Python using a confi
 - [x] Improve the quit command.
 - [x] Improve user-facing prompts.
 - [x] Add a `/new` command that resets the conversation while preserving the system prompt.
+- [x] Move terminal command recognition into `commands.py`.
 
 ### 2. Project configuration
 
