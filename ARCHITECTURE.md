@@ -8,7 +8,7 @@ flowchart TD
     Main --> Agent[agent_loop/agent.py]
     Agent --> Prompts[agent_loop/prompts.py]
     Agent --> Model[agent_loop/model.py]
-    Model --> OpenRouter[OpenRouter API]
+    Model --> Provider[OpenAI-compatible provider API]
     Model --> Env[.env]
     Agent --> History[Conversation history]
 ```
@@ -17,9 +17,9 @@ flowchart TD
 
 - `main.py` starts the program.
 - `agent.py` manages the conversation loop and message history.
-- `model.py` sends messages to OpenRouter and returns the response text.
+- `model.py` sends messages to the configured OpenAI-compatible provider and returns the response text.
 - `prompts.py` stores the system prompt.
-- `.env` stores private configuration such as the API key.
+- `.env` stores the provider endpoint, model name, and private API key.
 
 ## Planned architecture
 
@@ -31,7 +31,7 @@ flowchart TD
     Soul[SOUL.md] -. future behavior .-> Prompts[Prompt system]
     Agent --> Prompts
     Agent --> Model[Model client]
-    Model --> OpenRouter[OpenRouter API]
+    Model --> Provider[OpenAI-compatible provider API]
 ```
 
 The agent core should remain separate from interfaces such as the terminal or Telegram. This allows multiple interfaces to reuse the same conversation and model logic.

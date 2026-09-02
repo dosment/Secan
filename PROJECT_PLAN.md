@@ -2,18 +2,18 @@
 
 ## Project goal
 
-Build a small, understandable AI agent harness in Python using OpenRouter. The project should be easy to learn from, test, and extend.
+Build a small, understandable AI agent harness in Python using a configurable OpenAI-compatible provider. The project should be easy to learn from, test, and extend.
 
 ## Current state
 
 - [x] Python project organized in the `agent_loop` package.
-- [x] OpenRouter connection configured through the `OPENROUTER_API_KEY` environment variable.
+- [x] Provider connection configured through the `PROVIDER_API_KEY` and `PROVIDER_ENDPOINT` environment variables.
 - [x] System prompt loaded from `prompts.py`.
 - [x] User and assistant messages stored as conversation history.
 - [x] Interactive conversation loop supports the `quit` command.
 - [x] Friendly error handling for API and connection failures.
 - [x] Blank user input is handled with a clear message.
-- [x] Model can be configured through `OPENROUTER_MODEL` with a default model.
+- [x] Model can be configured through the `PROVIDER_MODEL` environment variable.
 - [x] Quit commands provide multiple exit options and a goodbye message.
 - [x] `main.py` uses a safe entry-point guard.
 - [x] Git repository initialized with regular checkpoints.
@@ -30,7 +30,7 @@ Build a small, understandable AI agent harness in Python using OpenRouter. The p
 ### 2. Project configuration
 
 - [x] Add `requirements.txt` with the required packages.
-- [ ] Document setup and usage in `README.md`.
+- [x] Document setup and usage in `README.md`.
 - [x] Add configuration values such as the model name through environment variables.
 
 ### 3. Agent identity and prompts

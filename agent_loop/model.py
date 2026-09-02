@@ -9,15 +9,15 @@ load_dotenv()  # Load environment variables from .env file
 
 client = OpenAI(
     # Import API key and provider endpoint
-    api_key=os.getenv("OPENROUTER_API_KEY"),
-    base_url="https://openrouter.ai/api/v1",
+    api_key=os.getenv("PROVIDER_API_KEY"),
+    base_url=os.getenv("PROVIDER_ENDPOINT"),
 )
 
 def get_model_response(messages):
     # Send messages to the model and return its response.
     try:
         response = client.chat.completions.create(
-            model=os.getenv("OPENROUTER_MODEL", "openrouter/free"),
+            model=os.getenv("PROVIDER_MODEL"),
             messages=messages,
         )
         return response.choices[0].message.content
