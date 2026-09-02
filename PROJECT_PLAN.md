@@ -29,7 +29,7 @@ Build a small, understandable AI agent harness in Python using OpenRouter. The p
 
 ### 2. Project configuration
 
-- [ ] Add `requirements.txt` with the required packages.
+- [x] Add `requirements.txt` with the required packages.
 - [ ] Document setup and usage in `README.md`.
 - [x] Add configuration values such as the model name through environment variables.
 
@@ -73,7 +73,3 @@ Build a small, understandable AI agent harness in Python using OpenRouter. The p
 - Test each meaningful change.
 - Use Git checkpoints regularly and review staged files before committing.
 - Never store API keys in the repository.
-
-## Immediate next step
-
-Complete the next unchecked task under **Project configuration**: add `requirements.txt` with the required packages.
