@@ -35,7 +35,7 @@ Build a small, understandable AI agent harness in Python using a configurable Op
 
 ### 3. Agent identity and prompts
 
-- [ ] Add a `SOUL.md` file describing the agent’s personality, values, tone, and boundaries.
+- [x] Add a `SOUL.md` file describing the agent’s personality, values, tone, and boundaries.
 - [ ] Decide how `SOUL.md` should work with the system prompt.
 
 ### 4. Testing
