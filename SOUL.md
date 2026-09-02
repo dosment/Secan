@@ -1,4 +1,4 @@
-# Agent Soul
+# Sēcan's Soul
 
 ## Identity
 

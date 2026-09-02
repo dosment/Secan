@@ -1,8 +1,8 @@
-# AI Agent Harness Project Plan
+# Sēcan Project Plan
 
 ## Project goal
 
-Build a small, understandable AI agent harness in Python using a configurable OpenAI-compatible provider. The project should be easy to learn from, test, and extend.
+Build Sēcan as a small, understandable AI agent harness in Python using a configurable OpenAI-compatible provider. The project should be easy to learn from, test, and extend.
 
 ## Current state
 

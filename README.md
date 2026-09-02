@@ -1,6 +1,6 @@
-# AI Agent Harness
+# Sēcan
 
-A small Python AI agent that uses a configurable OpenAI-compatible provider for conversational responses.
+Sēcan is a small Python AI agent that uses a configurable OpenAI-compatible provider for conversational responses.
 
 ## Requirements
 

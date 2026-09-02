@@ -1,4 +1,4 @@
-# AI Agent Harness Architecture
+# Sēcan Architecture
 
 ## Current architecture
 
