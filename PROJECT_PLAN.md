@@ -37,12 +37,14 @@ Build a small, understandable AI agent harness in Python using a configurable Op
 
 - [x] Add a `SOUL.md` file describing the agent’s personality, values, tone, and boundaries.
 - [ ] Decide how `SOUL.md` should work with the system prompt.
+- [ ] Load `SOUL.md` and combine it with the core system prompt.
 
 ### 4. Testing
 
 - [ ] Add tests for message-history behavior.
 - [ ] Add tests for quit and blank-input handling.
 - [ ] Test the agent without making real API requests by using a mock response.
+- [ ] Add behavior checks for Sēcan’s identity, communication style, and boundaries.
 
 ### 5. Telegram integration
 
@@ -64,6 +66,15 @@ Build a small, understandable AI agent harness in Python using a configurable Op
 - [ ] Explore short-term conversation memory limits.
 - [ ] Add optional conversation logging.
 - [ ] Add a simple way to inspect or save conversations.
+
+### 8. Guided self-refinement
+
+Begin this milestone after `SOUL.md` is integrated, behavior checks exist, and selected conversation logs are available. General tool calling is not required.
+
+- [ ] Let Sēcan review its current `SOUL.md` and selected conversation examples.
+- [ ] Let Sēcan compare its responses with its intended identity and behavior.
+- [ ] Let Sēcan propose focused refinements supported by specific examples.
+- [ ] Require user approval before applying any self-proposed identity change.
 
 ## Working principles
 
