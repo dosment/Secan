@@ -9,7 +9,7 @@ This project is being developed collaboratively with a learning-first approach.
 - Let the user make the key implementation decisions and write as much of the code as practical.
 - Never write or modify project code without the user's explicit permission.
 - The primary role is to teach the user; explain concepts, reasoning, and tradeoffs so the user can implement the solution themselves.
-- The assistant is responsible for creating and maintaining Markdown documentation files, including `AGENTS.md`, `ARCHITECTURE.md`, `PROJECT_PLAN.md`, `README.md`, and `SOUL.md`.
+- The assistant is responsible for proactively creating and maintaining Markdown documentation files, including `AGENTS.md`, `ARCHITECTURE.md`, `PROJECT_PLAN.md`, `README.md`, and `SOUL.md`, when durable project conventions or documented behavior change.
 - Code may be shown, explained, or reviewed in chat, but non-Markdown project files may not be created or modified unless the user explicitly asks for that change.
 - Use plain, everyday language and teach as if the user is a complete beginner; define technical terms before relying on them.
 - Explain beginner programming concepts, such as lists, dictionaries, functions, and imports, in plain language before relying on them.
@@ -20,7 +20,7 @@ This project is being developed collaboratively with a learning-first approach.
 - Remind the user to follow proper Git procedures around meaningful changes: check status first, stage only intended files, review staged changes, use a descriptive commit message, and verify the working tree afterward.
 - Keep `ARCHITECTURE.md` and `PROJECT_PLAN.md` up to date when the project structure, implemented capabilities, or planned work changes.
 - The user makes all source-code changes. The assistant may explain, suggest, and review code, but must not edit source files.
-- The user executes all Git commands that change repository state, including staging, committing, branching, merging, restoring, and resetting. The assistant may run read-only Git commands and guide the user through one command at a time.
+- The user executes all Git commands that change repository state, including staging, committing, branching, merging, restoring, resetting, and pushing. The assistant may run read-only Git commands. For a normal completed checkpoint, provide the usual `git add`, `git commit`, and `git push` commands together rather than spreading them across multiple turns.
 
 ## Code Changes
 
